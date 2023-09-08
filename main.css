@@ -1,0 +1,457 @@
+*{
+    box-sizing: border-box;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    font-family:  inter, Arial, sans-serif;
+}
+
+:root{
+    --accent-color: #586BDB;
+    --card-color: #27282D;
+}
+
+.container {
+    width: 100%; /* Ancho del contenedor */
+    margin-right: auto; /* Margen derecho automático para centrar */
+    margin-left: auto; /* Margen izquierdo automático para centrar */
+    padding-right: 1rem; /* Espacio interior derecho (ajuste opcional) */
+    padding-left: 1rem; /* Espacio interior izquierdo (ajuste opcional) */
+}
+
+picture{
+    display: block;
+}
+
+section{
+    padding-block: 6rem;
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+h3{
+    font-size: 1rem;
+}
+
+.features-list{
+    margin-block: 2rem;
+    display: grid;
+    gap: 5px;
+}
+
+.section-subtitle{
+    color: var(--accent-color);
+    display: block;
+    text-align: center;
+}
+
+.feature-card{
+    background-color: #27282D;
+    display: grid;
+    gap: 1.4rem;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.feature-card h3{
+    margin-bottom: .7rem;
+    color: white;
+}
+
+.feature-card img{
+    width: 2.2rem;
+}
+
+.feature-card p{
+    color: lightgrey;
+}
+
+
+
+/* Header */
+
+header{
+    background-color: #16151C;
+    padding-block: .7rem;
+    border-bottom: .5px solid lightgray;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo{
+    color: white;
+    font-weight: bolder;
+    display: flex;
+    gap: .5rem;
+    align-items: center;
+}
+
+.logo img{
+    width: 2rem;
+}
+
+header nav ul{
+    display: flex;
+    gap: .5rem;
+}
+
+nav a{
+    color: white;
+}
+
+nav a.active{
+    color: var(--accent-color);
+}
+
+h2{
+    color: white;
+    font-weight: bolder;
+    font-size: 1.7rem;
+    margin-top: .6rem;
+    margin-bottom: 1.1rem;
+    text-align: center;
+}
+
+/* hero */
+
+#hero{
+    background: rgb(22,21,26);
+    background: linear-gradient(180deg, rgba(22,21,26,1) 0%, rgba(11,28,38,1) 37%, rgba(34,28,32,1) 71%, rgba(22,21,26,1) 100%);
+    padding-bottom: 0;
+    overflow: hidden;
+}
+
+.hero-subtitle{
+    color: lightgray;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    text-align: center;
+    display: block;
+}
+
+#hero p{
+    font-size: 1rem;
+    color: lightgray;
+    text-align: center;
+}
+
+form{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    margin-block: 1.5rem;
+    padding: .5rem;
+    background-color: rgba(69, 66, 66, 0.205);
+    border-radius: 8px;
+}
+
+form input{
+    padding-block: .1rem;
+    padding-left: .3rem;
+    background-color: transparent;
+    border: 0;
+}
+
+form button{
+    background-color: var(--accent-color);
+    color: white;
+    font-weight: 500;
+    padding: 1rem .8rem;
+    border: none;
+    border-radius: 5px;
+}
+
+#hero picture{
+    margin-top: 4rem;
+}
+
+#hero img{
+    transform: translateY(3rem);
+}
+
+/* Features Section */
+
+#features{
+    background-color: #1A1920;
+}
+
+#features p{
+    text-align: center;
+    color: lightgray;
+}
+
+/* Command line section */
+
+#command-line{
+    background-color: #17161C;
+}
+
+#command-line p{
+    text-align: center;
+    color: lightgray;
+}
+
+#command-line picture{
+    margin-top: 2rem;
+    display: block;
+}
+
+/* Integrations section */
+
+#integrations{
+    background-color: #1A1920;
+    margin-top: -1px;
+}
+
+#integrations .container > p {
+    text-align: center;
+    color: lightgray;
+}
+
+.coming-soon{
+    color: rgb(171, 171, 171);
+}
+
+/* Team section */
+
+#team{
+    background-color: #17161C;
+}
+
+#team p{
+    color: lightgray;
+    text-align: center;
+}
+
+#team .team-links{
+    display: flex;
+    justify-content: center;
+    margin-block: 1.5rem;
+    gap: 1rem;
+}
+
+#team h3{
+    text-align: center;
+    color: white;
+}
+
+.team-list h3{
+    margin-block: .8rem;
+}
+
+.team-list p{
+    color: lightgray;
+}
+
+.team-links a{
+    color: var(--accent-color);
+}
+
+.team-content{
+    border-bottom: .5px solid lightgrey;
+}
+
+.team-list picture{
+    display: block;
+    text-align: center;
+}
+
+.team-list img{
+    width: 4rem;
+    text-align: center;
+}
+
+.team-list{
+    display: grid;
+    gap: 1rem;
+    margin-top: 2rem;
+}
+
+.team-links a img{
+    width: 2rem;
+    display: block;
+}
+
+.team-last-content{
+    background-color: #27282D;
+    margin-top: 3rem;
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.team-last-content h4{
+    font-weight: bold;
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.team-last-content p{
+    color: lightgray;
+    text-align: center;
+    margin-top: .6rem;
+}
+
+/* FOOTER  */
+
+footer{
+    background-color: #17161C;
+    border-top: .5px solid lightgray;
+    padding-block: 2rem;
+}
+
+footer .container{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+footer .logo{
+    font-weight: 300;
+    color: lightgray;
+    justify-content: center;
+}
+
+.footer-nav{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+}
+
+.footer-nav a{
+    color: rgb(215, 215, 215);
+    font-weight: 400;
+}
+
+/* Estilo para el contenedor pequeño (pequeño en pantallas pequeñas) */
+@media screen and (min-width: 640px) {
+    .container {
+        max-width: 640px; /* Ancho máximo en pantallas pequeñas */
+    }
+}
+
+/* Estilo para el contenedor mediano (mediano en pantallas medianas) */
+@media screen and (min-width: 768px) {
+    .container {
+        max-width: 768px; /* Ancho máximo en pantallas medianas */
+    }
+
+    header{
+        padding-block: 1rem;
+    }
+    
+    header nav ul{
+        gap: 3rem;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    #hero h2{
+        text-align: center!important;
+        font-size: 3.5rem;
+    }
+
+    .hero-content{
+        width: 70%;
+        margin: auto;
+    }
+
+    .features-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        margin-top: 3rem;
+    }
+
+    .feature-card p, .feature-card h3, .feature-card picture, #integrations p{
+        text-align: left;
+    }
+
+    .section-subtitle, h2, #features p, #command-line p, #team p{
+        text-align: left;
+    }
+
+    .team-links{
+        justify-content: flex-start!important;
+    }
+
+    .team-content{
+        padding-bottom: 2rem;
+    }
+
+    .team-list{
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 4rem;
+        margin-top: 4rem;
+    }
+
+    .team-list h3, .team-list p, .team-list picture{
+        text-align: left!important;
+    }
+
+    .team-last-content h4{
+        text-align: left;
+    } 
+
+    #integrations .container >  p{
+        text-align: left;
+    }
+
+    .team-links a img{
+        width: 1rem;
+    }     
+
+
+}
+
+/* Estilo para el contenedor grande (grande en pantallas grandes) */
+@media screen and (min-width: 1024px) {
+    .container {
+        max-width: 1024px; /* Ancho máximo en pantallas grandes */
+    }
+
+    .features-list{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    footer .container{
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .footer-nav{
+        flex-direction: row;
+    }
+
+    .team-last-content{
+        display: grid;
+        grid-template-columns: 1.4fr 1fr;
+        overflow: hidden;
+        padding-bottom: 0;
+        padding-top: 3rem;
+        margin-top: 6rem;
+        gap: 1rem;
+    }
+
+    .team-last-content h4{
+        font-size: 1.5rem;
+    }
+
+    .team-last-content img{
+        transform: translateX(7rem) translateY(2rem) scale(1.15);
+
+    }
+    
+}
+
